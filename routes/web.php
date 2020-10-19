@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 
 Route::get('/users', 'UserController@index');
+
+Route::get('/levels', 'LevelController@index');
+Route::post('/levels/store', 'LevelController@store');

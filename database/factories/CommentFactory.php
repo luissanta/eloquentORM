@@ -20,6 +20,6 @@ use Illuminate\Support\Str;
 $factory->define(Comment::class, function (Faker $faker) {
     return [
         'body' => $this->faker->text,
-        'user_id' => $this->rand(1, 5),
+        'user_id' => rand(1, 5),
     ];
 });
